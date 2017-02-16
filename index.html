@@ -3,87 +3,247 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- start html code -->
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <!-- meta -->
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- title -->
-        <title>CV</title>
-        <!-- css styles -->
-        <!-- <link rel="stylesheet" type="css" href="css/reset.min.css"/> -->
-        <link rel="stylesheet" href="css/bootstrap-reboot.css"/>
-        <link rel="stylesheet" href="css/bootstrap.css"/>
-        <style>
-        .bg {
-            background: url('res/jumbo-back.jpg') no-repeat center center;
-            position: fixed;
+
+<head>
+    <!-- meta -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- title -->
+    <title>CV</title>
+    <!-- css styles -->
+    <!-- <link rel="stylesheet" type="css" href="css/reset.min.css"/> -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+        body {
+            background: #f5f5f5;
+        }
+
+        #info {
+            color: #fff;
+            background: #03a9f4;
+        }
+
+        #out_container {
+            background: #fff;
+            margin-top: 50px;
+            border: 1px solid rgba(0, 0, 0, .2);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+            height: 1800px;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+
+        #subtitle {
+            color: #0277bd;
+        }
+
+        #subcontent {
+            margin-top: 20px;
+        }
+
+        #subcontent-box {
             width: 100%;
-            height: 350px; /*same height as jumbotron */
-            top:0;
-            left:0;
-            z-index: -1;
-          }
+            margin: 30px
+        }
 
-          .jumbotron {
-            height: 350px;
+        .subcontent-box {
+            margin-top: 5px !important;
+        }
+
+        #refs {
             color: white;
-            text-shadow: #000 0 1px 10px;
-            background:transparent;
-          }
-          .children{
-          	background: #ffdb4c;
-          	height: 300px;
-          	position: relative;
-          	top: 50%;
-          	transform: 			translateY(-50%);
-          }
-        </style>
-        <!-- <link rel="stylesheet" href="css/app.css" /> -->
-    </head>
+            /*background: #0277bd;*/
+            height: 100%;
+            background: #0277bd;
+background: -moz-linear-gradient(top, #0277bd 0%, #68a5d6 100%);
+background: -webkit-linear-gradient(top, #0277bd 0%,#68a5d6 100%);
+background: linear-gradient(to bottom, #0277bd 0%,#68a5d6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0277bd', endColorstr='#68a5d6',GradientType=0 );
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/app.css" /> -->
+</head>
 
-    <!-- title bar  -->
-    <div class="bg"></div>
+<!-- title bar  -->
+<!-- <div class="bg"></div>
     <div class="jumbotron">
       <div class="container">
         <h3 class="display-4">Curriculum Vitae</h3>
         <h2 class="lead">MUHAMMAD SYAFIQ IZZAT BIN HUSSIN</h2>
       </div>
+    </div> -->
+
+<body>
+
+
+    <div id="out_container" class="container" style="">
+
+        <div class="row">
+            <div class="col">
+                <!-- career profile -->
+                <div class="row">
+                    <div id="subcontent-box">
+                        <!-- <hr> -->
+                        <img src="res/work.png" align="left" style="margin-right:10px;" />
+                        <h4 id="subtitle">CAREER PROFILE</h4>
+                        <div id="subcontent">A self-taught programmer that have been involved into coding for almost 4 years with different programming language.</div>
+                    </div>
+                </div>
+
+                <!-- education -->
+                <div class="row">
+                    <div id="subcontent-box" class="subcontent-box">
+                        <!-- <hr> -->
+                        <img src="res/education.png" align="left" style="margin-right:10px;" />
+                        <h4 id="subtitle">EDUCATION</h4>
+                        <div id="subcontent">
+                          <p style="font-weight:800;">Universiti Putra Malaysia</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">CGPA 3.0</p>
+
+                          <p style="font-weight:800;">Kolej Matrikulasi Negeri Sembilan</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">CGPA 3.8</p>
+
+                          <p style="font-weight:800;">SMK Taman Seraya</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">4A 1B 2C 1D</p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- exp -->
+                <div class="row">
+                    <div id="subcontent-box" class="subcontent-box">
+                        <!-- <hr> -->
+                        <img src="res/exp.png" align="left" style="margin-right:10px;" />
+                        <h4 id="subtitle">WORKING EXPERIENCES</h4>
+                        <div id="subcontent">
+                          <p style="font-weight:800;">Internship at Intelligent Circuit Engineering Sdn Bhd</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">2016</p>
+
+                          <p style="font-weight:800;">Freelance Game Guide Writer</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">2013 - 2014</p>
+
+                          <p style="font-weight:800;">Cashier at Orange Internet Cafe</p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">2010</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- project -->
+                <div class="row">
+                    <div id="subcontent-box" class="subcontent-box">
+                        <!-- <hr> -->
+                        <img src="res/project.png" align="left" style="margin-right:10px;" />
+                        <h4 id="subtitle">TECHNICAL PROJECTS</h4>
+                        <div id="subcontent">
+
+                          <p style="font-weight:800;"><a href="ijat.my/rBirl" target="_blank">Hotspot@PUTRA Auto-Login</a></p>
+                          <p href="ijat.my/rBirl" class="lead" style="font-size:15px; margin-top:-20px">Python</p>
+
+                          <p style="font-weight:800;"><a href="neulsky.tech" target="_blank">Neulsky: AI Weather Monitorin</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">Python + C (Arduino) + MongoDB</p>
+
+                          <p style="font-weight:800;"><a href="sang.gq" target="_blank">Telegram VPN bot (SanG)</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">Python</p>
+
+                          <p style="font-weight:800;"><a href="ijat.my/EPWFh" target="_blank">Automated Standard Cell Library Characterization Tool
+                          (ASCLiC)</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">Perl</p>
+
+                          <p style="font-weight:800;"><a href="ijat.my/DIOFR" target="_blank">Notepad On-The-Cloud</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">ASP.net</p>
+
+                          <p style="font-weight:800;"><a href="ijat.my/RoLos" target="_blank">RF3 Lock System</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">Assembly x86</p>
+
+                          <p style="font-weight:800;"><a href="ijat.my/yMLJP" target="_blank">Library System (LibSys)</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">C++</p>
+
+                          <p style="font-weight:800;"><a href="ijat.my/7WkWE" target="_blank">Solat XML/JSON API</a></p>
+                          <p class="lead" style="font-size:15px; margin-top:-20px">PHP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- skill -->
+                <div class="row">
+                    <div id="subcontent-box" class="subcontent-box">
+                        <!-- <hr> -->
+                        <img src="res/skill.png" align="left" style="margin-right:10px;" />
+                        <h4 id="subtitle">SKILLS AND PROFICIENTCY</h4>
+                        <div id="subcontent">dsfasdfhasjkdfhksjdfh</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-3">
+                <div class="row" id="info">
+                    <div class="container-fluid" style="margin-top:20px;margin-bottom:20px">
+                        <img style="" src="res/user.png" />
+                    </div>
+
+                    <div class="container-fluid">
+                        <a style="text-align: center;">
+                            <h5>MUHD SYAFIQ IZZAT</h5>
+                            <p class="lead" style="margin-top:-10px;">BIN HUSSIN</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- email -->
+                <div class="row" id="info">
+                    <div class="container-fluid">
+                        <img src="res/mail.png" align="left" style="margin-top:3px; margin-right:5px;">me@ijat.my
+                    </div>
+                </div>
+                <!-- phone num -->
+                <div class="row" id="info">
+                    <div class="container-fluid">
+                        <img src="res/phone.png" align="left" style="margin-top:4px; margin-right:5px;">019 689 0245
+                    </div>
+                </div>
+                <!-- location -->
+                <div class="row" id="info">
+                    <div class="container-fluid">
+                        <img src="res/location.png" align="left" style="margin-top:4px; margin-right:5px;">Kuala Lumpur
+                    </div>
+                </div>
+                <!-- web -->
+                <div class="row" id="info" style="padding-bottom:10px;">
+                    <div class="container-fluid">
+                        <img src="res/web.png" align="left" style="margin-top:3px; margin-right:5px;margin-bottom:5px">ijat.my
+                    </div>
+                </div>
+
+                <div class="row" style="padding-top:10px; background: #0091ea; color:white;">
+                    <div class="container-fluid">
+                        <p style="font-weight:800;text-align:center;margin-bottom:0px">Languages</p>
+                        <p style="font-size:15px;text-align:center;margin-bottom:0px">Malay (Expert)</p>
+                        <p style="font-size:15px;text-align:center;margin-bottom:20px">English (Intermediate)</p>
+                    </div>
+                </div>
+
+                <!-- References -->
+                <div class="row" id="refs" style="padding-top:10px">
+                    <div class="container-fluid">
+                        <p style="font-weight:800;text-align:center;margin-bottom:0px">References</p>
+                        <p class="lead" style="font-size:18px; \text-align:center;margin-bottom:0px">Dr. Fakhrul Zaman Rokhani</p>
+                        <p style="text-align:center;font-weight:400;">03 8946 4344</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
+</body>
 
+<!-- js at bottom to prevent blocking -->
+<script src="js/jquery-3.1.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
-      <div class="container">
-        <hr>
-        <h2>Introduction</h2>
-
-
-        <img align="left" src="res/empty.png" alt="res/empty.jpg" class="img-responsive" width="50" height="50">
-        <div class="row valign">
-         <div class="col-xs-5">
-            <!-- <div style="height:5em;border:1px solid #000">Big</div> -->
-
-         </div>
-         <div class="col-xs-5">
-             <div style="height:3em;border:1px solid #F00">Small</div>
-         </div>
-       </div>
-
-
-        <div class="row" style="margin-top:100px;">
-            <div class="col center">
-
-            </div>
-            <div class="col-10">
-              2 of 3 (wider)
-            </div>
-          </div>
-          </div>
-
-      </div>
-    </body>
-
-    <!-- js at bottom to prevent blocking -->
-    <script src="js/jquery-3.1.1.slim.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/custom.js"></script>
 </html>
